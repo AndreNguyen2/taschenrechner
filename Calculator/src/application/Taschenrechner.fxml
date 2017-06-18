@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox prefHeight="274.0" prefWidth="235.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Taschenrechner">
+   <children>
+      <AnchorPane prefHeight="52.0" prefWidth="235.0">
+         <children>
+            <TextField fx:id="textField" layoutX="21.0" layoutY="14.0" onKeyPressed="#handleTextField" prefHeight="36.0" prefWidth="186.0" />
+         </children>
+      </AnchorPane>
+      <AnchorPane prefHeight="223.0" prefWidth="235.0">
+         <children>
+            <GridPane layoutX="22.0" layoutY="14.0" prefHeight="186.0" prefWidth="192.0">
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <Button mnemonicParsing="false" prefHeight="53.0" prefWidth="50.0" text="Button" />
+                  <Button fx:id="button4" mnemonicParsing="false" onAction="#handleButton4" prefHeight="53.0" prefWidth="50.0" text="4" GridPane.rowIndex="1" />
+                  <Button fx:id="button2" mnemonicParsing="false" onAction="#handleButton2" prefHeight="53.0" prefWidth="50.0" text="2" GridPane.columnIndex="1" />
+                  <Button fx:id="button7" mnemonicParsing="false" onAction="#handleButton7" prefHeight="53.0" prefWidth="50.0" text="7" GridPane.rowIndex="2" />
+                  <Button fx:id="button5" mnemonicParsing="false" onAction="#handleButton5" prefHeight="53.0" prefWidth="50.0" text="5" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                  <Button fx:id="button8" mnemonicParsing="false" onAction="#handleButton8" prefHeight="53.0" prefWidth="50.0" text="8" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                  <Button fx:id="button0" mnemonicParsing="false" onAction="#handleButton0" prefHeight="53.0" prefWidth="50.0" text="0" GridPane.rowIndex="3" />
+                  <Button fx:id="buttoncomma" mnemonicParsing="false" onAction="#handleButtoncomma" prefHeight="53.0" prefWidth="50.0" text="," GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                  <Button fx:id="button3" mnemonicParsing="false" onAction="#handleButton3" prefHeight="53.0" prefWidth="50.0" text="3" GridPane.columnIndex="2" />
+                  <Button fx:id="button6" mnemonicParsing="false" onAction="#handleButton6" prefHeight="53.0" prefWidth="50.0" text="6" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+                  <Button fx:id="button9" mnemonicParsing="false" onAction="#handleButton9" prefHeight="53.0" prefWidth="50.0" text="9" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+                  <Button fx:id="buttonminus" mnemonicParsing="false" onAction="#handleButtonminus" prefHeight="53.0" prefWidth="50.0" text="-" GridPane.columnIndex="2" GridPane.rowIndex="3" />
+                  <Button fx:id="button1" mnemonicParsing="false" onAction="#handleButton1" prefHeight="53.0" prefWidth="50.0" text="1" />
+                  <Button fx:id="buttondiv" mnemonicParsing="false" onAction="#handleButtondiv" prefHeight="53.0" prefWidth="50.0" text="/" GridPane.columnIndex="3" />
+                  <Button fx:id="buttonmult" mnemonicParsing="false" onAction="#handleButtonmult" prefHeight="53.0" prefWidth="50.0" text="*" GridPane.columnIndex="3" GridPane.rowIndex="1" />
+                  <Button fx:id="buttonplus" mnemonicParsing="false" onAction="#handleButtonplus" prefHeight="53.0" prefWidth="50.0" text="+" GridPane.columnIndex="3" GridPane.rowIndex="2" />
+                  <Button fx:id="buttonequal" mnemonicParsing="false" onAction="#handleButtonequal" prefHeight="53.0" prefWidth="50.0" text="=" GridPane.columnIndex="3" GridPane.rowIndex="3" />
+               </children>
+            </GridPane>
+         </children>
+      </AnchorPane>
+   </children>
+</VBox>
